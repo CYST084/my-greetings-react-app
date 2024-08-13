@@ -1,0 +1,8 @@
+.hello-world {
+    color: blue;
+    background-color: rgb(171, 19, 177);
+    padding: 10px;
+    padding-left: 0px;
+    margin: 5px;
+    flex-wrap: wrap;
+}

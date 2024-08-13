@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import'./greeting.css';
 
 export default function Greeting(props) {
     const [inputName, setInputName] = useState(''); // Initialize with an empty string
@@ -14,10 +15,11 @@ export default function Greeting(props) {
             type="text" 
             placeholder="Enter your name" 
             value={inputName} 
-            onChange={handleInputChange}
+            onChange={handleInputChange} 
+            className="input-field"
             />
 
-            <p>Hello, {inputName || props.name}!!</p> {/* Display inputName if available, otherwise use props.name */}
+            <p className="greetings">Hello, {inputName || props.name}!!</p> {/* Display inputName if available, otherwise use props.name */}
         </div>
     );
 }
